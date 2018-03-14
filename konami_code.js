@@ -9,12 +9,13 @@ function init() {
 function listen(e){
   const key = parseInt(e.keyCode)
   
-  if (index === code.length){
-    alert('You have unlocked the secrets of the web. Use your power wisely')
-    index = 0
- }
+  
   if (key === code[index]){
     index++
+    if (index === code.length){
+    alert('You have unlocked the secrets of the web. Use your power wisely')
+    index = 0
+    }
   }
   else {
     index = 0
