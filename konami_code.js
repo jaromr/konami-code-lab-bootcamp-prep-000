@@ -5,7 +5,7 @@ var index = 0
 function init() {
  document.body.addEventListener('keydown',listen)
 }
-debugger
+
 function listen(e){
   const key = parseInt(e.keyCode)
   
