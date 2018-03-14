@@ -7,7 +7,7 @@ function init() {
 }
 
 function listen(e){
-  const key = parseInt(e.keyCode||e.which)
+  const key = parseInt(e.location||e.which)
   
   if (key === code[index]){
     index++
